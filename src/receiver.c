@@ -71,7 +71,7 @@ int main()
 			// Print out message
 			int ascii_msg_len = binary_msg_len / 8;
 			char msg[ascii_msg_len];
-			printf("> %s\n", conv_char(msg_ch, ascii_msg_len, msg));
+			printf(" %s\n", conv_char(msg_ch, ascii_msg_len, msg));
 	
 			// Terminate loop if received "exit" message
 			if (strcmp(msg, "exit") == 0) {

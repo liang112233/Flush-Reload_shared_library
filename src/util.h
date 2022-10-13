@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <stdarg.h>
-#include <getopt.h>
 #include <stdlib.h>
 #include <string.h>
 #include <inttypes.h>
@@ -14,7 +12,6 @@
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
-#include <dlfcn.h>
 #include <dlfcn.h>
 #include <gnu/lib-names.h>
 

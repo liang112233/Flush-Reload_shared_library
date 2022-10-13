@@ -34,7 +34,7 @@ int main() {
 	while (sending) {
 
 		// Get a message to send from the user
-		printf("< ");
+		printf("");
 		char text_buf[128];
 		fgets(text_buf, sizeof(text_buf), stdin);
 
