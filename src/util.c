@@ -113,22 +113,6 @@ char *conv_char(char *data, int size, char *msg)
     return msg;
 }
 
-/*
- * Prints help menu
- */
-void print_help() {
-
-	printf("Flush+Reload Covert Channel Sender/Reseiver Flags:\n"
-		"\t-f,\tFile to be shared between sender/receiver\n"
-		"\t-o,\tSelected offset into shared file\n"
-		"\t-i,\tTime interval for sending a single bit\n");
-
-}
-
-/*
- * Parses the arguments and flags of the program and initializes the struct config
- * with those parameters (or the default ones if no custom flags are given).
- */
 void init_config(struct config *config)
 {
 
