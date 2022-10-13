@@ -41,14 +41,14 @@ int main()
 
 	uint32_t bitSequence = 0;
 	uint32_t sequenceMask = ((uint32_t) 1<<6) - 1;
-	uint32_t expSequence = 0b101011;
+	uint32_t expSequence = 0b101010;
 	
-	printf("Listening...\n");
+	printf("Waiting for message...\n");
 	fflush(stdout);
 	while (1) {
 		bool bitReceived = detect_bit(&config);
 
-		// Detect the sequence '101011' that indicates sender is sending a message	
+		// Detect the sequence '101010' that indicates the start
 		bitSequence = ((uint32_t) bitSequence<<1) | bitReceived;
 		if ((bitSequence & sequenceMask) == expSequence) {
 			int binary_msg_len = 0;

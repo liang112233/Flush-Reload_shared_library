@@ -28,9 +28,9 @@ int main() {
 	init_config(&config);
 	int sending = 1;
 
-	bool sequence[8] = {1,0,1,0,1,0,1,1};
+	bool sequence[8] = {1,0,1,0,1,0,1,0};
 
-	printf("Please type a message (exit to stop).\n");
+	printf("Input a message.\n");
 	while (sending) {
 
 		// Get a message to send from the user

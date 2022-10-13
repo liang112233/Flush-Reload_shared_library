@@ -115,7 +115,7 @@ char *conv_char(char *data, int size, char *msg)
 
 void init_config(struct config *config)
 {
-
+// open a shared library LIBM_SO with dlopen
   void *handle;
   double (*cosine)(double);
   char *error;
@@ -125,7 +125,7 @@ void init_config(struct config *config)
       exit(EXIT_FAILURE);
   }
   dlerror();
-  //obtain address of a symbol in a shared object or executable
+  //obtain the virtual address of a function symble in a shared object or executable
   cosine = (double (*)) dlsym(handle, "cos");
   error = dlerror();
   if (error != NULL){
