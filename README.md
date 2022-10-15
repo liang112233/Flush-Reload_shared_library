@@ -10,3 +10,8 @@ to run it:
 
 ./receiver
 
+to run sender and receiver on separate cores
+
+taskset -c 0 ./sender
+
+taskset -c 1 ./receiver

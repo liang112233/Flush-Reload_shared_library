@@ -41,7 +41,7 @@ int main()
 
 	uint32_t bitSequence = 0;
 	uint32_t sequenceMask = ((uint32_t) 1<<6) - 1;
-	uint32_t expSequence = 0b101010;
+	uint32_t expSequence = 0b101011;
 	
 	printf("Waiting for message...\n");
 	fflush(stdout);

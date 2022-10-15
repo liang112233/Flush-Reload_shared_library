@@ -28,7 +28,7 @@ int main() {
 	init_config(&config);
 	int sending = 1;
 
-	bool sequence[8] = {1,0,1,0,1,0,1,0};
+	bool sequence[8] = {1,0,1,0,1,0,1,1};
 
 	printf("Input a message.\n");
 	while (sending) {
